@@ -12,17 +12,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Progessay Impact Coding Club</title>
+    <title>Cheaply — Instance Price Comparison</title>
     <meta
       name="description"
-      content="Website for Progessay Impact Coding Club"
+      content="Cheaply offers instant cloud instance price comparison across AWS, Azure, and GCP for startups and dev teams."
     />
   </head>
   <body id="page-top">
     <nav id="menu" class="site-nav">
       <div class="container nav-inner">
         <a class="nav-brand page-scroll" href="#page-top">
-          Progessay Impact Coding Club
+          Cheaply
         </a>
         <button
           type="button"
@@ -55,15 +55,17 @@
           <div class="container">
             <div class="row">
               <div class="col-8 col-center intro-text">
-                <h1>Progessay Impact Coding Club<span></span></h1>
+                <h1>Cheaply<span></span></h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  sed dapibus leo nec ornare diam sed commodo nibh ante facilisis
-                  bibendum.
+                  Instance price comparison for cloud compute, made simple. Find
+                  the best hourly and monthly deal across AWS, Azure, and GCP.
                 </p>
-                <a href="#features" class="btn btn-custom btn-lg page-scroll">
-                  Learn More
-                </a>
+                <div class="hero-search" style="margin-top: 2rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                  <input id="hero-search-input" type="search" placeholder="Search for t3.medium, n2-standard, D2s v4..." style="flex:1; min-width:220px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.14); background: rgba(255,255,255,0.04); color: #f8fafc; padding: 0.95rem 1.2rem; outline: none;" />
+                  <button id="hero-search-btn" class="btn btn-custom btn-lg page-scroll" type="button" style="border-radius: 999px;">Search</button>
+                </div>
+                <div id="hero-search-results" style="margin-top:1.2rem; color:#cbd5e1; font-size:0.95rem; line-height:1.6;"></div>
+                <a href="#features" class="btn btn-custom btn-lg page-scroll" style="margin-top: 1.5rem; display:inline-block;">Browse Features</a>
               </div>
             </div>
           </div>
@@ -75,38 +77,35 @@
       <div class="container">
         <div class="col-10 col-center section-title">
           <h2>Features</h2>
+          <p>Cheaply helps you compare cloud compute prices across providers so you can choose the best instance for your workload.</p>
         </div>
         <div class="row">
           <div class="col-3">
-            <i class="fa fa-comments-o"></i>
-            <h3>Lorem ipsum</h3>
+            <i class="fa fa-search"></i>
+            <h3>Search Across Providers</h3>
             <p>
-              Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus
-              eleifend pellentesque natoque etiam.
+              Quickly compare instance pricing for AWS, Azure, and GCP with a single search.
             </p>
           </div>
           <div class="col-3">
-            <i class="fa fa-bullhorn"></i>
-            <h3>Lorem ipsum</h3>
+            <i class="fa fa-balance-scale"></i>
+            <h3>Compare Value</h3>
             <p>
-              Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus
-              eleifend pellentesque natoque etiam.
+              See hourly and monthly cost estimates side by side to pick the most efficient option.
             </p>
           </div>
           <div class="col-3">
-            <i class="fa fa-group"></i>
-            <h3>Lorem ipsum</h3>
+            <i class="fa fa-cloud"></i>
+            <h3>Region Aware</h3>
             <p>
-              Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus
-              eleifend pellentesque natoque etiam.
+              Understand regional pricing differences so you can optimize location and budget.
             </p>
           </div>
           <div class="col-3">
-            <i class="fa fa-magic"></i>
-            <h3>Lorem ipsum</h3>
+            <i class="fa fa-rocket"></i>
+            <h3>Startup Friendly</h3>
             <p>
-              Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus
-              eleifend pellentesque natoque etiam.
+              Designed for lean teams and founders who need fast price visibility.
             </p>
           </div>
         </div>
@@ -121,31 +120,28 @@
           </div>
           <div class="col-6">
             <div class="about-text">
-              <h2>About Us</h2>
+              <h2>About Cheaply</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
+                Cheaply is a lean pricing comparison MVP built to help developers,
+                startups, and ops teams find the most cost-effective cloud
+                instance options across AWS, Azure, and GCP.
               </p>
-              <h3>Why Choose Us?</h3>
+              <h3>Why Cheaply?</h3>
               <div class="list-style">
                 <div class="col-6">
                   <ul>
-                    <li>Lorem ipsum dolor</li>
-                    <li>Tempor incididunt</li>
-                    <li>Lorem ipsum dolor</li>
-                    <li>Incididunt ut labore</li>
+                    <li>Instant cloud instance pricing lookup</li>
+                    <li>Provider and region cost comparison</li>
+                    <li>Hourly and monthly pricing visibility</li>
+                    <li>Simple, trusted startup UX</li>
                   </ul>
                 </div>
                 <div class="col-6">
                   <ul>
-                    <li>Aliquip ex ea commodo</li>
-                    <li>Lorem ipsum dolor</li>
-                    <li>Exercitation ullamco</li>
-                    <li>Lorem ipsum dolor</li>
+                    <li>Search by instance type</li>
+                    <li>Compare general purpose, compute optimized, and GPU options</li>
+                    <li>Designed for fast decision-making</li>
+                    <li>Built for small teams and founders</li>
                   </ul>
                 </div>
               </div>
@@ -158,76 +154,64 @@
     <div id="services" class="text-center">
       <div class="container">
         <div class="section-title">
-          <h2>Our Services</h2>
+          <h2>How Cheaply Helps</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            Built to simplify cloud instance pricing with fast search, comparison,
+            and regional pricing visibility.
           </p>
         </div>
         <div class="row">
           <div class="col-4">
-            <i class="fa fa-wordpress"></i>
+            <i class="fa fa-search"></i>
             <div class="service-desc">
-              <h3>Lorem ipsum dolor</h3>
+              <h3>Search Instance Types</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-                dapibus leo nec ornare diam sedasd commodo nibh ante facilisis
-                bibendum dolor feugiat at.
+                Find prices for the most common AWS, Azure, and GCP instance types.
               </p>
             </div>
           </div>
           <div class="col-4">
-            <i class="fa fa-cart-arrow-down"></i>
+            <i class="fa fa-balance-scale"></i>
             <div class="service-desc">
-              <h3>Consectetur adipiscing</h3>
+              <h3>Price Comparison</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-                dapibus leo nec ornare diam sedasd commodo nibh ante facilisis
-                bibendum dolor feugiat at.
+                Compare hourly and monthly pricing across providers at a glance.
               </p>
             </div>
           </div>
           <div class="col-4">
-            <i class="fa fa-cloud-download"></i>
+            <i class="fa fa-map-marker"></i>
             <div class="service-desc">
-              <h3>Lorem ipsum dolor</h3>
+              <h3>Region Insights</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-                dapibus leo nec ornare diam sedasd commodo nibh ante facilisis
-                bibendum dolor feugiat at.
+                See how regional pricing varies so you can choose the best location.
               </p>
             </div>
           </div>
           <div class="col-4">
-            <i class="fa fa-language"></i>
+            <i class="fa fa-rocket"></i>
             <div class="service-desc">
-              <h3>Consectetur adipiscing</h3>
+              <h3>Startup Friendly</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-                dapibus leo nec ornare diam sedasd commodo nibh ante facilisis
-                bibendum dolor feugiat at.
+                Designed for fast decisions so small teams can optimize cloud spend.
               </p>
             </div>
           </div>
           <div class="col-4">
-            <i class="fa fa-plane"></i>
+            <i class="fa fa-cog"></i>
             <div class="service-desc">
-              <h3>Lorem ipsum dolor</h3>
+              <h3>Simple UX</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-                dapibus leo nec ornare diam sedasd commodo nibh ante facilisis
-                bibendum dolor feugiat at.
+                Clean, intuitive comparison tools without unnecessary complexity.
               </p>
             </div>
           </div>
           <div class="col-4">
-            <i class="fa fa-pie-chart"></i>
+            <i class="fa fa-clock-o"></i>
             <div class="service-desc">
-              <h3>Consectetur adipiscing</h3>
+              <h3>Fast Results</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-                dapibus leo nec ornare diam sedasd commodo nibh ante facilisis
-                bibendum dolor feugiat at.
+                Instant results for frequently used compute and GPU instance types.
               </p>
             </div>
           </div>
@@ -238,10 +222,9 @@
     <div id="portfolio" class="text-center">
       <div class="container">
         <div class="section-title">
-          <h2>Gallery</h2>
+          <h2>Instance Comparisons</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            Sample cloud instance options so you can see the kinds of pricing Cheaply helps uncover.
           </p>
         </div>
         <div class="row">
@@ -251,16 +234,16 @@
                 <div class="hover-bg">
                   <a
                     href="img/portfolio/01-large.jpg"
-                    title="Project Title"
+                    title="AWS t3.micro vs Azure D2s v4"
                     data-lightbox-gallery="gallery1"
                   >
                     <div class="hover-text">
-                      <h4>Project Title</h4>
+                      <h4>AWS t3.micro</h4>
                     </div>
                     <img
                       src="img/portfolio/01-small.jpg"
                       class="img-fluid"
-                      alt="Project Title"
+                      alt="AWS t3.micro"
                     />
                   </a>
                 </div>
@@ -271,16 +254,16 @@
                 <div class="hover-bg">
                   <a
                     href="img/portfolio/02-large.jpg"
-                    title="Project Title"
+                    title="GCP e2-standard-2 vs Azure D2s v4"
                     data-lightbox-gallery="gallery1"
                   >
                     <div class="hover-text">
-                      <h4>Project Title</h4>
+                      <h4>GCP e2-standard-2</h4>
                     </div>
                     <img
                       src="img/portfolio/02-small.jpg"
                       class="img-fluid"
-                      alt="Project Title"
+                      alt="GCP e2-standard-2"
                     />
                   </a>
                 </div>
@@ -291,16 +274,16 @@
                 <div class="hover-bg">
                   <a
                     href="img/portfolio/03-large.jpg"
-                    title="Project Title"
+                    title="AWS g4dn.xlarge GPU pricing"
                     data-lightbox-gallery="gallery1"
                   >
                     <div class="hover-text">
-                      <h4>Project Title</h4>
+                      <h4>AWS g4dn.xlarge</h4>
                     </div>
                     <img
                       src="img/portfolio/03-small.jpg"
                       class="img-fluid"
-                      alt="Project Title"
+                      alt="AWS g4dn.xlarge"
                     />
                   </a>
                 </div>
@@ -311,16 +294,16 @@
                 <div class="hover-bg">
                   <a
                     href="img/portfolio/04-large.jpg"
-                    title="Project Title"
+                    title="Azure NV12s v3 GPU option"
                     data-lightbox-gallery="gallery1"
                   >
                     <div class="hover-text">
-                      <h4>Project Title</h4>
+                      <h4>Azure NV12s v3</h4>
                     </div>
                     <img
                       src="img/portfolio/04-small.jpg"
                       class="img-fluid"
-                      alt="Project Title"
+                      alt="Azure NV12s v3"
                     />
                   </a>
                 </div>
@@ -331,16 +314,16 @@
                 <div class="hover-bg">
                   <a
                     href="img/portfolio/05-large.jpg"
-                    title="Project Title"
+                    title="AWS m5.large vs GCP n2-standard-4"
                     data-lightbox-gallery="gallery1"
                   >
                     <div class="hover-text">
-                      <h4>Project Title</h4>
+                      <h4>AWS m5.large</h4>
                     </div>
                     <img
                       src="img/portfolio/05-small.jpg"
                       class="img-fluid"
-                      alt="Project Title"
+                      alt="AWS m5.large"
                     />
                   </a>
                 </div>
@@ -351,16 +334,16 @@
                 <div class="hover-bg">
                   <a
                     href="img/portfolio/06-large.jpg"
-                    title="Project Title"
+                    title="GCP c2-standard-8 compute optimized"
                     data-lightbox-gallery="gallery1"
                   >
                     <div class="hover-text">
-                      <h4>Project Title</h4>
+                      <h4>GCP c2-standard-8</h4>
                     </div>
                     <img
                       src="img/portfolio/06-small.jpg"
                       class="img-fluid"
-                      alt="Project Title"
+                      alt="GCP c2-standard-8"
                     />
                   </a>
                 </div>
@@ -371,16 +354,16 @@
                 <div class="hover-bg">
                   <a
                     href="img/portfolio/07-large.jpg"
-                    title="Project Title"
+                    title="AWS r5.large memory optimized"
                     data-lightbox-gallery="gallery1"
                   >
                     <div class="hover-text">
-                      <h4>Project Title</h4>
+                      <h4>AWS r5.large</h4>
                     </div>
                     <img
                       src="img/portfolio/07-small.jpg"
                       class="img-fluid"
-                      alt="Project Title"
+                      alt="AWS r5.large"
                     />
                   </a>
                 </div>
@@ -391,16 +374,16 @@
                 <div class="hover-bg">
                   <a
                     href="img/portfolio/08-large.jpg"
-                    title="Project Title"
+                    title="Azure F4s v2 compute optimized"
                     data-lightbox-gallery="gallery1"
                   >
                     <div class="hover-text">
-                      <h4>Project Title</h4>
+                      <h4>Azure F4s v2</h4>
                     </div>
                     <img
                       src="img/portfolio/08-small.jpg"
                       class="img-fluid"
-                      alt="Project Title"
+                      alt="Azure F4s v2"
                     />
                   </a>
                 </div>
@@ -411,16 +394,16 @@
                 <div class="hover-bg">
                   <a
                     href="img/portfolio/09-large.jpg"
-                    title="Project Title"
+                    title="GCP a2-highgpu-1g GPU preview"
                     data-lightbox-gallery="gallery1"
                   >
                     <div class="hover-text">
-                      <h4>Project Title</h4>
+                      <h4>GCP a2-highgpu-1g</h4>
                     </div>
                     <img
                       src="img/portfolio/09-small.jpg"
                       class="img-fluid"
-                      alt="Project Title"
+                      alt="GCP a2-highgpu-1g"
                     />
                   </a>
                 </div>
@@ -434,7 +417,8 @@
     <div id="testimonials">
       <div class="container">
         <div class="section-title text-center">
-          <h2>What our clients say</h2>
+          <h2>What users say</h2>
+          <p>Feedback from early users who used Cheaply to compare cloud instance pricing.</p>
         </div>
         <div class="row">
           <div class="col-4">
@@ -444,11 +428,9 @@
               </div>
               <div class="testimonial-content">
                 <p>
-                  ""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                  facilisis bibendum dolor feugiat at.""
+                  "Cheaply helped us compare AWS and GCP prices in seconds. We found a better instance for our budget."
                 </p>
-                <div class="testimonial-meta"> - John Doe </div>
+                <div class="testimonial-meta"> - Ava, startup CTO </div>
               </div>
             </div>
           </div>
@@ -459,11 +441,9 @@
               </div>
               <div class="testimonial-content">
                 <p>
-                  ""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                  facilisis bibendum dolor feugiat at.""
+                  "The hero search is simple and effective. We now compare instance costs before every purchase."
                 </p>
-                <div class="testimonial-meta"> - Johnathan Doe </div>
+                <div class="testimonial-meta"> - Ryan, DevOps lead </div>
               </div>
             </div>
           </div>
@@ -474,11 +454,9 @@
               </div>
               <div class="testimonial-content">
                 <p>
-                  ""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                  facilisis bibendum dolor feugiat at.""
+                  "Cheaply gave us a quick way to see cloud cost differences across regions and instance families."
                 </p>
-                <div class="testimonial-meta"> - John Doe </div>
+                <div class="testimonial-meta"> - Priya, product manager </div>
               </div>
             </div>
           </div>
@@ -489,11 +467,9 @@
               </div>
               <div class="testimonial-content">
                 <p>
-                  ""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                  facilisis bibendum dolor feugiat at.""
+                  "The interface feels modern and focuses on the right pricing details. Great MVP for cloud cost comparison."
                 </p>
-                <div class="testimonial-meta"> - Johnathan Doe </div>
+                <div class="testimonial-meta"> - Noah, engineer </div>
               </div>
             </div>
           </div>
@@ -504,11 +480,9 @@
               </div>
               <div class="testimonial-content">
                 <p>
-                  ""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                  facilisis bibendum dolor feugiat at.""
+                  "I love that Cheaply is built for fast decision-making rather than overwhelming details."
                 </p>
-                <div class="testimonial-meta"> - John Doe </div>
+                <div class="testimonial-meta"> - Mia, founder </div>
               </div>
             </div>
           </div>
@@ -519,11 +493,9 @@
               </div>
               <div class="testimonial-content">
                 <p>
-                  ""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                  facilisis bibendum dolor feugiat at.""
+                  "This MVP already gives us a reliable starting point for comparing instance pricing."
                 </p>
-                <div class="testimonial-meta"> - Johnathan Doe </div>
+                <div class="testimonial-meta"> - Carlos, finance lead </div>
               </div>
             </div>
           </div>
@@ -536,8 +508,7 @@
         <div class="col-8 col-center section-title">
           <h2>Meet the Team</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            The core team building Cheaply and focused on fast, transparent cloud pricing.
           </p>
         </div>
         <div class="row">
@@ -687,10 +658,9 @@
       <div id="footer">
         <div class="container text-center">
           <p>
-            &copy; Progessay Impact Coding Club
+            &copy; Cheaply
           </p>
         </div>
-      </div>
     </div>
 
     <script src="script.js"></script>
